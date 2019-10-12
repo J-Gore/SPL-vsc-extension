@@ -4,6 +4,10 @@
 
 Adds support for basic syntax highlighting in SPL(Simple Programming Language) that is used in The University of Hull's Languages and their Compilers module.
 
+## Installation
+
+- To use this extension, download the `master` branch as a ZIP and extract it into the `<user home>/.vscode/extensions` folder and restart Code.
+
 ## Extension Settings
 
 Adds support for `.spl` files.
