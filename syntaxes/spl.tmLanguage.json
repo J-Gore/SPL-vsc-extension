@@ -1,0 +1,71 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "SPL",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#identifiers"
+		},
+		{
+			"include": "#strings"
+		}, 
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.spl",
+				"match": "\\b(IF|THEN|ELSE|ENDIF|DO|WHILE|ENDDO|ENDWHILE|FOR|OF|TYPE|IS|BY|TO|ENDFOR|WRITE|NEWLINE|READ)\\b"
+			}]
+		},
+		"codeblocks": {
+			"patterns": [
+				{
+					"name":"entity.name.class.spl",
+					"match": "\\b(CODE|DECLARATIONS|ENDP)\\b"
+				}
+			]
+		},	
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.language.spl",
+					"match": "\\b(CHARACTER|REAL|INTEGER)\\b"
+				}
+			]
+		},
+		"identifiers": {
+			"patterns": [
+				{
+					"name": "variable.name.spl",
+					"match": "[a-zA-Z][a-zA-Z0-9]*"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+				"name":"string.quoted.single.spl",
+				"begin": "'",
+				"end": "'"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name":"constant.numeric.spl",
+					"match": "-[0-9]+.[0-9]+|[0-9]+.[0-9]+|-[0-9]+|[0-9]+"
+				}
+			]
+		}
+	},
+	"scopeName": "source.spl"
+}
