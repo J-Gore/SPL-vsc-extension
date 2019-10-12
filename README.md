@@ -10,7 +10,7 @@ Adds support for `.spl` files.
 
 ## Known Issues
 
-Probably lots, feel free to put in a PR at [the github repo.](https://help.github.com/articles/markdown-basics/)
+Probably lots, feel free to put in a PR at [the github repo.](https://github.com/J-Gore/SPL-vsc-extension)
 
 
 ### 1.0.0
